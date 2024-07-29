@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { collection, query, where, orderBy, onSnapshot } from 'firebase/firestore';
 import { auth, db } from '../../firebase';
 import TodoItem from '../../components/TodoItem';
+import AddTodoForm from '../../components/AddTodoForm';
 import { useRouter } from 'next/router';
 
 const TodoList = () => {
@@ -32,6 +33,7 @@ const TodoList = () => {
   return (
     <div className="container">
       <h2>Your Todos</h2>
+      <AddTodoForm />
       <ul className="list-group">
         {todos.map(todo => (
           <TodoItem key={todo.id} todo={todo} />
@@ -42,3 +44,4 @@ const TodoList = () => {
 };
 
 export default TodoList;
+
