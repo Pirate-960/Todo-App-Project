@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
+  const [search, setSearch] = useState('');
   const router = useRouter();
   
   useEffect(() => {
@@ -30,12 +31,23 @@ const TodoList = () => {
     return () => unsubscribe();
   }, []);
 
+  const filteredTodos = todos.filter(todo =>
+    todo.content.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="container">
       <h2>Your Todos</h2>
       <AddTodoForm />
+      <input
+        type="text"
+        className="form-control mb-3"
+        placeholder="Search todos"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
       <ul className="list-group">
-        {todos.map(todo => (
+        {filteredTodos.map(todo => (
           <TodoItem key={todo.id} todo={todo} />
         ))}
       </ul>
@@ -44,4 +56,3 @@ const TodoList = () => {
 };
 
 export default TodoList;
-
