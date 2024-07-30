@@ -1,5 +1,5 @@
-// pages/_app.js
-import '../styles/globals.css';
+// _app.js (in the root directory)
+import './styles/globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from './components/Layout';
 

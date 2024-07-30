@@ -1,4 +1,4 @@
-// pages/about.js
+// pages/about/about.js
 import React from 'react';
 import './about.css';
 
