@@ -1,0 +1,80 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+    color: #333;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+}
+
+.about-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.about-mission,
+.about-features,
+.about-benefits,
+.about-community,
+.about-contact {
+    margin-bottom: 40px;
+}
+
+.about-mission h2,
+.about-features h2,
+.about-benefits h2,
+.about-community h2,
+.about-contact h2 {
+    font-size: 2em;
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.about-features ul,
+.about-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-features ul li,
+.about-benefits ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-features ul li:before,
+.about-benefits ul li:before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #007BFF;
+}
+
+.about-contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.about-contact a:hover {
+    text-decoration: underline;
+}
+
+.about-footer {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
