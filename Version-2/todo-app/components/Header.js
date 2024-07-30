@@ -1,8 +1,7 @@
-import React from 'react';
 import Link from 'next/link';
-import { auth } from '../firebase';
-import { useRouter } from 'next/router';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { auth } from '../firebaseConfig';
+import { useRouter } from 'next/router';
 
 const Header = () => {
   const router = useRouter();
