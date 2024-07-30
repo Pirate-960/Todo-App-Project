@@ -3,6 +3,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const metadata = {

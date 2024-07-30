@@ -105,7 +105,7 @@ const Home = () => {
             <hr/>
             <p className='mt-4'>Ready to conquer your to-do list? Dive into TaskMaster and transform the way you get things done!</p>
             <hr/>
-            <button className='btn btn-primary btn-lg mt-3' style={{ borderRadius: '50px', padding: '10px 30px', fontSize: '1.25rem' }}><Link href="/Header" text="bold">Try Now</Link></button>
+            <button className='btn btn-primary btn-lg mt-3' style={{ borderRadius: '50px', padding: '10px 30px', fontSize: '1.25rem' }}>Try Now</button>
           </div>
         </div>
       </div>
