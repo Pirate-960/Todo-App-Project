@@ -1,18 +1,28 @@
-// pages/index.js
-import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
+  const cardStyle = {
+    height: '200px', // Set a fixed height for consistency
+    width: '100%', // Ensure the width is responsive
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '20px',
+  };
+
   return (
-    <main className='container-fluid'>
+    <main className='container'>
       <div className='row bg-light py-5 gx-5'>
         <div className='col-12 text-center'>
           <h1 className='mb-4'>Welcome to TaskMaster: Your Personal Productivity Guru!</h1>
+          <hr/>
           <p className='lead'>Organize Your Day, Your Way!</p>
         </div>
         <div className='col-md-8 offset-md-2'>
           <div className='row'>
             <div className='col-md-6 mb-4'>
-              <div className='card text-center shadow-sm'>
+              <div className='card text-center shadow-sm' style={cardStyle}>
                 <div className='card-body'>
                   <h2 className='card-title' style={{ fontSize: '2rem' }}>🌟</h2>
                   <h5 className='card-subtitle mb-2 text-muted'>Effortless Task Management</h5>
@@ -21,7 +31,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-md-6 mb-4'>
-              <div className='card text-center shadow-sm'>
+              <div className='card text-center shadow-sm' style={cardStyle}>
                 <div className='card-body'>
                   <h2 className='card-title' style={{ fontSize: '2rem' }}>🕒</h2>
                   <h5 className='card-subtitle mb-2 text-muted'>Smart Scheduling</h5>
@@ -32,7 +42,7 @@ const Home = () => {
           </div>
           <div className='row'>
             <div className='col-md-6 mb-4'>
-              <div className='card text-center shadow-sm'>
+              <div className='card text-center shadow-sm' style={cardStyle}>
                 <div className='card-body'>
                   <h2 className='card-title' style={{ fontSize: '2rem' }}>🔔</h2>
                   <h5 className='card-subtitle mb-2 text-muted'>Intuitive Reminders</h5>
@@ -41,7 +51,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-md-6 mb-4'>
-              <div className='card text-center shadow-sm'>
+              <div className='card text-center shadow-sm' style={cardStyle}>
                 <div className='card-body'>
                   <h2 className='card-title' style={{ fontSize: '2rem' }}>📈</h2>
                   <h5 className='card-subtitle mb-2 text-muted'>Progress at a Glance</h5>
@@ -52,7 +62,7 @@ const Home = () => {
           </div>
           <div className='row'>
             <div className='col-md-6 mb-4'>
-              <div className='card text-center shadow-sm'>
+              <div className='card text-center shadow-sm' style={cardStyle}>
                 <div className='card-body'>
                   <h2 className='card-title' style={{ fontSize: '2rem' }}>👥</h2>
                   <h5 className='card-subtitle mb-2 text-muted'>Collaborate Seamlessly</h5>
@@ -61,7 +71,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-md-6 mb-4'>
-              <div className='card text-center shadow-sm'>
+              <div className='card text-center shadow-sm' style={cardStyle}>
                 <div className='card-body'>
                   <h2 className='card-title' style={{ fontSize: '2rem' }}>💬</h2>
                   <h5 className='card-subtitle mb-2 text-muted'>Personalized Insights</h5>
@@ -72,7 +82,7 @@ const Home = () => {
           </div>
           <div className='row'>
             <div className='col-md-6 mb-4'>
-              <div className='card text-center shadow-sm'>
+              <div className='card text-center shadow-sm' style={cardStyle}>
                 <div className='card-body'>
                   <h2 className='card-title' style={{ fontSize: '2rem' }}>🌙</h2>
                   <h5 className='card-subtitle mb-2 text-muted'>Zen Mode</h5>
@@ -81,7 +91,7 @@ const Home = () => {
               </div>
             </div>
             <div className='col-md-6 mb-4'>
-              <div className='card text-center shadow-sm'>
+              <div className='card text-center shadow-sm' style={cardStyle}>
                 <div className='card-body'>
                   <h2 className='card-title' style={{ fontSize: '2rem' }}>🎨</h2>
                   <h5 className='card-subtitle mb-2 text-muted'>Customizable Themes</h5>
@@ -91,7 +101,9 @@ const Home = () => {
             </div>
           </div>
           <div className='text-center'>
+            <hr/>
             <p className='mt-4'>Ready to conquer your to-do list? Dive into TaskMaster and transform the way you get things done!</p>
+            <hr/>
             <button className='btn btn-primary btn-lg mt-3' style={{ borderRadius: '50px', padding: '10px 30px', fontSize: '1.25rem' }}>Try Now</button>
           </div>
         </div>

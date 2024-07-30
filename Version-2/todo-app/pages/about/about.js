@@ -13,7 +13,7 @@ const About = () => {
       <section className="about-mission">
         <h2>Our Mission</h2>
         <p>
-          At <Link className="link" href="\">TaskMaster</Link>, we believe that productivity should be seamless and enjoyable.
+          At <Link className="link" href="/">TaskMaster</Link>, we believe that productivity should be seamless and enjoyable.
           Our mission is to empower you to organize your day, your way, and achieve your goals
           with ease and efficiency. We strive to turn your daily grind into a gratifying journey
           of accomplishment and growth.
@@ -61,7 +61,7 @@ const About = () => {
       <section className="about-benefits">
         <h2>Why Choose TaskMaster?</h2>
         <p>
-          <Link className="link" href="\">TaskMaster</Link> is designed with you in mind. Whether you're a student, professional, or a busy parent,
+          <Link className="link" href="/">TaskMaster</Link> is designed with you in mind. Whether you're a student, professional, or a busy parent,
           our app adapts to your unique needs. With TaskMaster, you can:
         </p>
         <ul>
