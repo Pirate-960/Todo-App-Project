@@ -2,7 +2,7 @@
 import Layout from '../components/Layout';
 import { AuthProvider } from '../context/AuthContext';
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+//import { useRouter } from 'next/router';
 //import { auth } from '../firebaseConfig';
 
 import '../styles/globals.css';
