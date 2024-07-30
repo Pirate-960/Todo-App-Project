@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import { AuthProvider } from '../context/AuthContext';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { auth } from '../firebaseConfig';
+//import { auth } from '../firebaseConfig';
 
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
+  /*const router = useRouter();
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -21,14 +21,14 @@ function MyApp({ Component, pageProps }) {
     });
 
     return () => unsubscribe();
-  }, [router]);
+  }, [router]);*/
 
   return (
-    <AuthProvider>
+    //<AuthProvider>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </AuthProvider>
+    //</AuthProvider>
   );
 }
 
